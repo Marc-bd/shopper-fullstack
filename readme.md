@@ -36,7 +36,18 @@ Certifique-se de que você tenha o Docker instalado e em execução na sua máqu
     npm install
     ```
 
-### 3. Configurar o Docker
+### 3. Criar arquivo .env
+
+1. Na pasta raiz do projeto (`shopper-fullstack`), crie um arquivo .env.
+
+2. Informe a sua **Google Api Key**, exemplo:
+```dotenv
+GOOGLE_API_KEY=<chave da API>
+
+```
+
+
+### 4. Configurar o Docker
 
 1. Na pasta raiz do projeto (`shopper-fullstack`), onde o arquivo `docker-compose.yml` está localizado, execute o comando para iniciar os containers:
 
