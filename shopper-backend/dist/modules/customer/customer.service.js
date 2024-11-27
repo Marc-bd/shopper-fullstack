@@ -46,6 +46,9 @@ let CustomerService = class CustomerService {
     async onModuleInit() {
         await this.seedCustomers();
     }
+    getAllCustomers() {
+        return this.customerRepository.find();
+    }
 };
 exports.CustomerService = CustomerService;
 exports.CustomerService = CustomerService = __decorate([

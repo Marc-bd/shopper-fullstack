@@ -7,7 +7,6 @@ import { RequestEstimateRideDTO } from './dtos/RequestEstimateRideDTO';
 import { NotAcceptableException, NotFoundException } from '@nestjs/common';
 import { GoogleService } from '../google/google.service';
 import { DriverService } from '../driver/driver.service';
-import Any = jasmine.Any;
 import { SaveRideDTO } from './dtos/SaveRideDTO';
 
 export class RideService {

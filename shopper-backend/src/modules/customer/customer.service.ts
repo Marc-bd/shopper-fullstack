@@ -42,4 +42,8 @@ export class CustomerService implements OnModuleInit {
   async onModuleInit() {
     await this.seedCustomers();
   }
+
+  public getAllCustomers(): Promise<CustomerEntity[]> {
+    return this.customerRepository.find();
+  }
 }

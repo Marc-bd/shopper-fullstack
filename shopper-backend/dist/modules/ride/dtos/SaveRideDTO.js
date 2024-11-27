@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SaveRideDTO = void 0;
 const class_validator_1 = require("class-validator");
-const RequestSaveDriverDTO_1 = require("../../driver/RequestSaveDriverDTO");
+const RequestSaveDriverDTO_1 = require("../../driver/dtos/RequestSaveDriverDTO");
 class SaveRideDTO {
 }
 exports.SaveRideDTO = SaveRideDTO;

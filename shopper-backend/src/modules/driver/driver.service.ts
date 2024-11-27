@@ -3,6 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { DriverEntity } from './driver.entity';
 import { Repository } from 'typeorm';
 import { FeedbackEntity } from '../feedback/feedback.entity';
+import { RequestGetDriverDTO } from './dtos/RequestGetDriverDTO';
 
 @Injectable()
 export class DriverService implements OnModuleInit {
@@ -112,5 +113,18 @@ export class DriverService implements OnModuleInit {
     }
 
     return [];
+  }
+
+  public async getAllDrivers(): Promise<RequestGetDriverDTO[]> {
+    const data = await this.driverRepository.find();
+
+    if (data.length > 0) {
+      return data.map((driver) => ({
+        id: driver.id,
+        name: driver.name,
+      }));
+    } else {
+      return [];
+    }
   }
 }

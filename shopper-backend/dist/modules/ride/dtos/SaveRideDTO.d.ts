@@ -1,4 +1,4 @@
-import { RequestSaveDriverDTO } from '../../driver/RequestSaveDriverDTO';
+import { RequestSaveDriverDTO } from '../../driver/dtos/RequestSaveDriverDTO';
 export declare class SaveRideDTO {
     customer_id: string;
     origin: string;

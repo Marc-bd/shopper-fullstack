@@ -28,8 +28,6 @@ let GoogleService = class GoogleService {
     async getBestRoute(data) {
         try {
             const apiKey = this.getApiKey();
-            console.log('apikey', apiKey);
-            console.log('data', data);
             const response = await axios_1.default.get(this.googleMapsApiUrl, {
                 params: {
                     origin: data.origin,

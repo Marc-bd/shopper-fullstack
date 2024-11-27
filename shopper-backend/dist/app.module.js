@@ -19,6 +19,7 @@ const google_service_1 = require("./modules/google/google.service");
 const ride_entity_1 = require("./modules/ride/ride.entity");
 const ride_controller_1 = require("./modules/ride/ride.controller");
 const ride_service_1 = require("./modules/ride/ride.service");
+const Initial_controller_1 = require("./modules/Initial/Initial.controller");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -50,7 +51,7 @@ exports.AppModule = AppModule = __decorate([
                 ride_entity_1.RideEntity,
             ]),
         ],
-        controllers: [ride_controller_1.RideController],
+        controllers: [ride_controller_1.RideController, Initial_controller_1.InitialRoutesController],
         providers: [customer_service_1.CustomerService, driver_service_1.DriverService, google_service_1.GoogleService, ride_service_1.RideService],
         exports: [customer_service_1.CustomerService, driver_service_1.DriverService, google_service_1.GoogleService, ride_service_1.RideService],
     })

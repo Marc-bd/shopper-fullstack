@@ -7,10 +7,11 @@ import { DriverEntity } from './modules/driver/driver.entity';
 import { FeedbackEntity } from './modules/feedback/feedback.entity';
 import { DriverService } from './modules/driver/driver.service';
 import { GoogleService } from './modules/google/google.service';
-import { GoogleController } from './modules/google/google.controller';
+
 import { RideEntity } from './modules/ride/ride.entity';
 import { RideController } from './modules/ride/ride.controller';
 import { RideService } from './modules/ride/ride.service';
+import { InitialRoutesController } from './modules/Initial/Initial.controller';
 
 @Module({
   imports: [
@@ -39,7 +40,7 @@ import { RideService } from './modules/ride/ride.service';
       RideEntity,
     ]),
   ],
-  controllers: [RideController],
+  controllers: [RideController, InitialRoutesController],
   providers: [CustomerService, DriverService, GoogleService, RideService],
   exports: [CustomerService, DriverService, GoogleService, RideService],
 })

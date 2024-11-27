@@ -30,7 +30,6 @@ let RideService = class RideService {
         this.driverService = driverService;
     }
     async estimate(data) {
-        console.log('data', data);
         const route = await this.googleService.getBestRoute({
             origin: data.origin,
             destination: data.destination,

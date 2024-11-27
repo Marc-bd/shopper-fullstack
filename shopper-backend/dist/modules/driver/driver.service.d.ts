@@ -2,6 +2,7 @@ import { OnModuleInit } from '@nestjs/common';
 import { DriverEntity } from './driver.entity';
 import { Repository } from 'typeorm';
 import { FeedbackEntity } from '../feedback/feedback.entity';
+import { RequestGetDriverDTO } from './dtos/RequestGetDriverDTO';
 export declare class DriverService implements OnModuleInit {
     private driverRepository;
     private feedbackRepository;
@@ -19,4 +20,5 @@ export declare class DriverService implements OnModuleInit {
         };
         value: number;
     }[]>;
+    getAllDrivers(): Promise<RequestGetDriverDTO[]>;
 }

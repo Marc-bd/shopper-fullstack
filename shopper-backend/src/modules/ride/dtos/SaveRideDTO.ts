@@ -1,5 +1,5 @@
 import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
-import { RequestSaveDriverDTO } from '../../driver/RequestSaveDriverDTO';
+import { RequestSaveDriverDTO } from '../../driver/dtos/RequestSaveDriverDTO';
 
 export class SaveRideDTO {
   @IsNotEmpty()

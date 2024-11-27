@@ -9,12 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.8",
+    "@headlessui/react": "^2.2.0",
+    "@hookform/resolvers": "^3.9.1",
+    "@preline/combobox": "^2.5.0",
+    "@react-google-maps/api": "^2.20.3",
+    "@vis.gl/react-google-maps": "^1.4.1",
     "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "dotenv-webpack": "^8.1.0",
     "next": "15.0.3",
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.2",
+    "react-hot-toast": "^2.4.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@types/google.maps": "^3.58.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -6,4 +6,5 @@ export declare class CustomerService implements OnModuleInit {
     constructor(customerRepository: Repository<CustomerEntity>);
     seedCustomers(): Promise<void>;
     onModuleInit(): Promise<void>;
+    getAllCustomers(): Promise<CustomerEntity[]>;
 }

@@ -106,6 +106,18 @@ let DriverService = class DriverService {
         }
         return [];
     }
+    async getAllDrivers() {
+        const data = await this.driverRepository.find();
+        if (data.length > 0) {
+            return data.map((driver) => ({
+                id: driver.id,
+                name: driver.name,
+            }));
+        }
+        else {
+            return [];
+        }
+    }
 };
 exports.DriverService = DriverService;
 exports.DriverService = DriverService = __decorate([
